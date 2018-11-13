@@ -1,0 +1,30 @@
+
+  <form>
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" [(ngModel)]= "nombre" name = "nombre" class="form-control" id="nombre" aria-describedby="nombreHelp" placeholder="Ingrese su nombre">
+      <small id="nombreHelp" class="form-text text-muted">Si lo escribis jodete</small>
+    </div>
+  
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" [(ngModel)]= "apellido" name = "apellido" class="form-control" id="apellido" placeholder="Ingrese su nombre">
+    </div>
+
+    <div class= "form-group">
+      <label for="nacionalidad">Nacionalidades</label>
+      <select class= "form-control" id= "nacionalidad" [(ngModel)]= "idNacionalidad" name = "idNacionalidad">
+      <option *ngFor= "let nacionalidad of nacionalidades" 
+        value={{nacionalidad.id}} > 
+        {{nacionalidad.nacionalidad}}
+      </option>
+     </select>
+
+    </div>
+    
+    <button type="submit" (click)= "enviar()" class="btn btn-primary">Submit</button>
+  </form>
+
+
+
+{{ nombre + ' ' + apellido + ' '+ idNacionalidad }}

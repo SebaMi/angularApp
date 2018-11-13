@@ -107,6 +107,9 @@ npm WARN deprecated circular-json@0.5.9: CircularJSON is in maintenance only, fl
 > node scripts/install.js
 
 Cached binary found at C:\Users\Diseño multimedial\AppData\Roaming\npm-cache\node-sass\4.9.3\win32-x64-57_binding.node
+EJECUTAR COMO ADMINISTRADOR!!!
+
+
 
 > node-sass@4.9.3 postinstall C:\Users\Java\angularApp\node_modules\node-sass
 > node scripts/build.js
@@ -134,3 +137,8 @@ chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
 chunk {styles} styles.js, styles.js.map (styles) 16.2 kB [initial] [rendered]
 chunk {vendor} vendor.js, vendor.js.map (vendor) 3.55 MB [initial] [rendered]
 i ?wdm?: Compiled successfully.
+
+
+pagina: getBootstrap
+
+
