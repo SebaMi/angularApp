@@ -26,6 +26,6 @@ export class FormularioComponent implements OnInit {
   }
 
   public enviar() :void {
-    console.log("Se recibio nombre: " + this.nombre + " apellido: " +this.apellido + "nacionalidad: " + this.idNacionalidad);
+    console.log("Se recibio nombre: " + this.nombre + " apellido: " +this.apellido + " nacionalidad: " + this.idNacionalidad);
   }
 }
