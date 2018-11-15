@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-formulario',
@@ -16,7 +17,7 @@ export class FormularioComponent implements OnInit {
     { id: "3", nacionalidad: 'uruguayo'}
   ];
 
-  constructor() { 
+  constructor(private _data:DataService) { 
     this.nombre = 'Nombre inicial';   
     this.apellido = 'Apellido inicial'; 
 
@@ -26,6 +27,7 @@ export class FormularioComponent implements OnInit {
   }
 
   public enviar() :void {
+    
     console.log("Se recibio nombre: " + this.nombre + " apellido: " +this.apellido + " nacionalidad: " + this.idNacionalidad);
   }
 }
