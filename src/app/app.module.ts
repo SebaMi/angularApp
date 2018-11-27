@@ -9,6 +9,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { UiModule } from './ui/ui.module';
 import { MyModalComponent } from './my-modal/my-modal.component';
 import {DataService} from './data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {DataService} from './data.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    UiModule
+    UiModule,
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
